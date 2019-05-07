@@ -3,8 +3,10 @@ int input()
 {
 int a;
 int b;
-printf("read a,b",&a,&b);
-return a,b;
+printf("read a",a);
+printf("read b",b);
+return a;
+return b;
 }
 int compute(int a,int b);
 {
@@ -19,10 +21,9 @@ return;
 void main()
 {
 int a,b,sum;
-a=int a;
-b=int b;
+a=input();
+b=input();
 sum=compute(a+b);
 output=sum;
 return;
 }
-
