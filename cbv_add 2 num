@@ -1,29 +1,30 @@
 #include<stdio.h>
 int input()
 {
-int a;
-int b;
-printf("read a",a);
-printf("read b",b);
-return a;
-return b;
+   int a;
+   int b;
+   printf("read a",a);
+   printf("read b",b);
+   return a;
+   return b;
 }
 int compute(int a,int b);
 {
-a=a+b;
-retun a;
+   a=a+b;
+   retun a;
 }
 void output(int x,int y)
 {
-printf("%d%d",x,y);
-return;
+   printf("%d%d",x,y);
+   return;
 }
 void main()
 {
-int a,b,sum;
-a=input();
-b=input();
-sum=compute(a+b);
-output=sum;
-return;
+   int a,b,sum,x,y;
+   a=input();
+   b=input();
+   sum=compute(a,b);
+   output(x,y);
+   return;
 }
+
