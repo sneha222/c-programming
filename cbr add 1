@@ -4,7 +4,7 @@ int input()
    int *a;
    scanf("%d",a);
    }
-int compute(int a)
+int compute(int *a)
 {
    *a=*a+1;
    }
@@ -21,3 +21,4 @@ int main()
    output(sum);
    return 0;
 }
+
