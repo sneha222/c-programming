@@ -1,22 +1,30 @@
 #include<stdio.h>
 int input()
 {
-    int a;
-scanf("%d",&a);
-return a;
+   int a;
+   scanf("%d",&a);
+   return a;
 }
-int compute(int a);
+int compute(int a)
 {
-a=a+1;
-return a;
+   a=a+1;
+   return a;
 }
-int output(int x);
+void output(int x)
 {
-printf("%d",&a);
-return;
+   printf("%d",x);
+   return;
 }
 int main()
 {
+   int a,sum;
+   printf("read a\n");
+   a=input();
+   sum=compute(a);
+   output(sum);
+   return 0;
+}
+
 
 
     
