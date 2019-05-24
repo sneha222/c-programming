@@ -1,24 +1,26 @@
 #include<stdio.h>
-void input(int *a,int *b)
+int input()
 {
-   scanf("%d",&a);
-   scanf("%d",&b);
-
+   int x ;
+   scanf("%d",&x);
+   return x;
 }
-void compute(int a,int b,int *s)
+void compute(int *a,int*b)
 {
  int s=0;
- *s=a+b;
+ s=*a+*b;
 }
 void output(int s)
 {
    printf("%d\n",s);
-   }
+}
 int main()
 {
    int a,b,x,s;
-   printf("read a and b\n");
-   input(x);
+   printf("read a\n");
+   a=input(x);
+   printf("read b\n");
+   b=input(x);
    compute(&a,&b);
    output(s);
    return 0;
